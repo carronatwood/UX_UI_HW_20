@@ -1,0 +1,228 @@
+html {
+    scroll-behavior: smooth;
+  }
+.logo {
+    width: 23%;
+    padding: 5px;
+    text-align: left;
+}
+.navigationTop{
+    background-color: whitesmoke;
+    z-index: 9999;
+    margin-bottom: 10px;
+}
+.nav {
+    width: 73%;
+    margin-bottom: 15px;
+}
+.navList li{
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: center;
+    flex-direction: right;
+    display: inline; 
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans";
+}
+a { 
+    color: inherit; 
+    text-decoration: none;
+} 
+.nav a:hover {
+    text-decoration: underline;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+.sticky + .content {
+    padding-top: 60px;
+  }
+#phases li a{
+    color: black;
+}
+.container{
+    text-align: center;
+}
+.jumbotron {
+    padding-top: 90px;
+    margin-top: 80px;
+    background-color: whitesmoke;
+}
+.content{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    min-height: 19px;
+    width: 150px;
+    margin: 5px ;
+    color: #fff;
+    background-color: rgb(59, 78, 64);
+    border: 0px;
+    margin: 40px;
+}
+.footer{
+    background-color: #373738;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+#footerList li{
+    margin: 0px auto;
+    list-style-type: none;
+    text-align: center;
+    flex-direction: center;
+    display: inline;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans";
+}
+.flexChild {
+    margin: 0px;
+    text-align: center;
+    grid-template-rows: 33%;
+    grid-template-areas: 1fr 1fr 1fr;
+}
+.flexChild p {
+    margin: 0px;
+    max-width: 300px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-areas: 1fr 1fr 1fr;
+}
+h1{
+    font-family: "Open Sans";
+    text-align: center;
+    margin: 0;
+}
+p{
+    font-family: "Open Sans";
+}
+h4{
+    font-family: "Open Sans";
+}
+h3{
+    font-family: "Open Sans";
+    text-align: center;
+}
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userResearch {
+    background-color: #ACB9AC;
+    color: white;
+    margin: 0 auto;
+}
+.userResearch h1{
+    padding-top: 90px;
+}
+.definition {
+    background-color: #46391F;
+    color: white;
+    margin: 0 auto;
+}
+.definition h1 {
+    padding-top: 90px;
+}
+.ideation{
+    background-color: #B7B3AB;
+    color: white;
+    margin: 0 auto;
+}
+.ideation h1{
+    padding-top: 90px;
+}
+.prototype {
+    background-color: #ACB9AC;
+    color: white;
+    margin: 0 auto;
+}
+.prototype h1{
+    padding-top: 90px;
+}
+.userTesting {
+    background-color: #46391F;
+    color: white;
+    margin: 0 auto;
+}
+.userTesting h1 {
+    padding-top: 90px;
+}
+.conclusion{
+    background-color: #B7B3AB;
+    color: white;
+    margin: 0 auto;
+}
+.conclusion h1{
+    padding-top: 90px;
+}
+.gridChild p{
+    margin: 0px;
+    max-width: 300px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-areas: 1fr 1fr;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.gridChild button{
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    min-height: 19px;
+    width: 150px;
+    margin: 5px ;
+    color: #fff;
+    background-color: rgb(59, 78, 64);
+    border: 0px;
+
+}
+
+@media only screen and (max-width: 1000px){  
+    .flexContainer{
+        display:grid;
+    }
+    .flexChild{
+    margin: 10px;
+    text-align: center;
+    flex-direction: row;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "User Research" 
+    "UX/UI Prototyping"
+    "Front End Web Development";
+}
+.workGrid {
+    display: grid;
+}   
+    .gridChild {
+    margin: 10px;
+    text-align: center;
+    flex-direction: row;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "hairGoals" 
+    "NEMAA";
+}
+}
